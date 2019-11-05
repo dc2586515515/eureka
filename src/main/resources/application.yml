@@ -1,11 +1,14 @@
-server:
-  port: 8761
-
-eureka:
-  instance:
-    hostname: discovery         # Ö¸¶¨¸ÃEurekaÊµÀýµÄÖ÷»úÃû
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#server:
+#  port: 8761
+#
+#eureka:
+#  instance:
+#    hostname: discovery         # Ö¸ï¿½ï¿½ï¿½ï¿½EurekaÊµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#  client:
+#    registerWithEureka: false
+#    fetchRegistry: false
+#    serviceUrl:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+spring:
+  profiles:
+    active: peer1
